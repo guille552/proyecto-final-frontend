@@ -1,85 +1,460 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/animate.css" />
-    <link rel="stylesheet" href="css/fancybox.css" />
-    <link rel="stylesheet" href="css/carrousel.css" />
-    <!-- scripts -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="https://kit.fontawesome.com/138f20aa8b.js" crossorigin="anonymous"></script>
-    <script src="js/responsiveslides.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/fancybox.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animate.css" />
+  <link rel="stylesheet" href="css/fancybox.css" />
+  <link rel="stylesheet" href="css/carrousel.css" />
+  <!-- scripts -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://kit.fontawesome.com/138f20aa8b.js" crossorigin="anonymous"></script>
+  <script src="js/responsiveslides.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/fancybox.js"></script>
 </head>
+
 <body>
-    <header class="navbar">
-        <!-- Parte superior: Información de contacto y redes sociales -->
-        <div class="top-bar">
-          <div class="contact-info">
-            <span><i class="fas fa-phone-alt"></i> (+1) 123 456 7894</span>
-            <span><i class="fas fa-envelope"></i> info@example.com</span>
-            <span><i class="fas fa-clock"></i> Office Hour: 08:00AM - 06:00PM</span>
-          </div>
-          <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-          </div>
-        </div>
-      
-        <!-- Sección intermedia: Información de contacto principal -->
-        <div class="main-contact">
-          <div class="logo">
-            <img src="recursos/logo.png" alt="Logo">
-          </div>
-          <div class="contact-details">
-            <div class="contact-item">
-              <i class="fas fa-phone-alt"></i>
-              <div>
-                <h4>Call Now</h4>
-                <p>(+1) 123 456 7894</p>
-              </div>
-            </div>
-            <div class="contact-item">
-              <i class="fas fa-envelope"></i>
-              <div>
-                <h4>Email Us</h4>
-                <p>info@example.com</p>
-              </div>
-            </div>
-            <div class="contact-item">
-              <i class="fas fa-map-marker-alt"></i>
-              <div>
-                <h4>Our Location</h4>
-                <p>3783 Armbrester Drive, USA</p>
-              </div>
-            </div>
+  <header class="navbar">
+    <div class="top-bar">
+      <div class="contact-info">
+        <span><i class="fas fa-phone-alt"></i> (+1) 123 456 7894</span>
+        <span><i class="fas fa-envelope"></i> info@example.com</span>
+        <span><i class="fas fa-clock"></i> Office Hour: 08:00AM - 06:00PM</span>
+      </div>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="main-contact">
+      <div class="logo">
+        <img src="recursos/logo.png" alt="Logo">
+      </div>
+      <div class="contact-details">
+        <div class="contact-item">
+          <i class="fas fa-phone-alt"></i>
+          <div>
+            <h4>Call Now</h4>
+            <p>(+1) 123 456 7894</p>
           </div>
         </div>
-      
-        <!-- Barra principal: Logo y navegación -->
-        <div class="navbar-content">
-          <nav class="navbar-nav">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#services">About Us</a></li>
-              <li><a href="#carousel">Services</a></li>
-              <li><a href="#clients">Clients</a></li>
-              <li><a href="#notices">Blog</a></li>
-              <li><a href="#contact-section">Contact</a></li>
-            </ul>
-          </nav>
-      
-          <div class="contact">
-            <button class="contact-button">Apply Now</button>
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <h4>Email Us</h4>
+            <p>info@example.com</p>
           </div>
         </div>
-      </header>
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <h4>Our Location</h4>
+            <p>3783 Armbrester Drive, USA</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar-content">
+      <nav class="navbar-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#services">About Us</a></li>
+          <li><a href="#carousel">Services</a></li>
+          <li><a href="#clients">Clients</a></li>
+          <li><a href="#notices">Blog</a></li>
+          <li><a href="#contact-section">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="contact">
+        <button class="contact-button">Apply Now</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- carrusel con responsiveslides -->
+
+  <section class="slide-fotos">
+    <ul class="rslides">
+      <li><img src="recursos/rslides1.jpg" alt="" />
+        <div class="info">
+          <h1>BEST TEMPLATE FOR EDUCATION AND COURSES BUSINESS</h1>
+          <br />
+          <p>There are many variations of passages of avaliable but the majority have suffered alteration in some form
+            by injected hhumour or randomised words which don't look even slightly believable</p>
+          <br />
+          <a class="btn-learn-more" href="">Learn More</a>
+        </div>
+      </li>
+      <li><img src="recursos/rslides2.jpg" alt="" />
+        <div class="info">
+          <h1>BEST TEMPLATE FOR EDUCATION AND COURSES BUSINESS</h1>
+          <br />
+          <p>There are many variations of passages of avaliable but the majority have suffered alteration in some form
+            by injected hhumour or randomised words which don't look even slightly believable</p>
+          <br />
+          <a class="btn-learn-more" href="">Learn More</a>
+        </div>
+      </li>
+      <li><img src="recursos/rslides3.jpg" alt="" />
+        <div class="info">
+          <h1>BEST TEMPLATE FOR EDUCATION AND COURSES BUSINESS</h1>
+          <br />
+          <p>There are many variations of passages of avaliable but the majority have suffered alteration in some form
+            by injected hhumour or randomised words which don't look even slightly believable</p>
+          <br />
+          <a class="btn-learn-more" href="">Learn More</a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- seccion con efectos -->
+
+  <div class="contenedor-caracteristicas">
+    <h1>Revisa <span style="color: green;">Nuestras Mejores</span> Características</h1>
+    <p>Es un hecho establecido que un lector se distraerá con el contenido legible de una página al mirar su diseño.</p>
+
+    <div class="tarjetas-caracteristicas">
+      <div class="tarjeta-caracteristica">
+        <img src="recursos/efecto1.jpg" alt="Facilidad de Becas">
+        <div class="contenido-tarjeta">
+          <h3>Facilidad de Becas</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+        </div>
+      </div>
+
+      <div class="tarjeta-caracteristica">
+        <img src="recursos/efecto2.jpg" alt="Profesores Capacitados">
+        <div class="contenido-tarjeta">
+          <h3>Profesores Capacitados</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+        </div>
+      </div>
+
+      <div class="tarjeta-caracteristica">
+        <img src="recursos/efecto3.jpg" alt="Facilidad de Biblioteca">
+        <div class="contenido-tarjeta">
+          <h3>Facilidad de Biblioteca</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="seccion-inscripcion">
+    <div class="bloque-formulario">
+      <h2>Inicia tu Inscripción</h2>
+      <p>Es un hecho establecido que un lector se distraerá con el contenido legible de una página.</p>
+      <form id="form-inscripcion">
+        <input type="text" id="nombre" placeholder="Nombre Completo" required>
+        <input type="email" id="correo" placeholder="Correo Electrónico" required>
+        <textarea id="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+        <button type="submit">Regístrate Ahora</button>
+      </form>
+    </div>
+
+    <div class="bloque-contenido">
+      <h2>Tenemos Profesionales Experimentados y Hacemos Nuestro Mejor Esfuerzo Para Lograr Tu Meta.</h2>
+      <p>Existen muchas variaciones de pasajes de Lorem Ipsum disponibles, pero la mayoría han sufrido alteraciones de
+        alguna forma.</p>
+      <div class="contadores">
+        <div class="contador">
+          <div class="circulo" id="estudiantes">0</div>
+          <div class="descripcion">Estudiantes</div>
+        </div>
+        <div class="contador">
+          <div class="circulo" id="cursos">0</div>
+          <div class="descripcion">Cursos</div>
+        </div>
+        <div class="contador">
+          <div class="circulo" id="profesores">0</div>
+          <div class="descripcion">Profesores</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- segmento cursos populares -->
+
+  <section class="courses-section">
+    <h2>Explore Popular Courses</h2>
+    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at
+      its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.</p>
+    <div class="courses-container">
+      <div class="course-card wow animate__animated animate__fadeInDown">
+        <img src="recursos/curso1.jpg" alt="Business Management">
+        <div class="course-info">
+          <h3>Business Management</h3>
+          <p>10 Lessons</p>
+          <div class="rating">★★★★☆ (4.0)</div>
+          <p>60 Seats | 3 Years | $850</p>
+        </div>
+      </div>
+      <div class="course-card wow animate__animated animate__fadeInDown">
+        <img src="recursos/curso2.jpg" alt="Chemical Engineering">
+        <div class="course-info">
+          <h3>Chemical Engineering</h3>
+          <p>10 Lessons</p>
+          <div class="rating">★★★★☆ (4.0)</div>
+          <p>60 Seats | 3 Years | $850</p>
+        </div>
+      </div>
+      <div class="course-card wow animate__animated animate__fadeInDown">
+        <img src="recursos/curso3.jpg" alt="Civil Engineering">
+        <div class="course-info">
+          <h3>Civil Engineering</h3>
+          <p>10 Lessons</p>
+          <div class="rating">★★★★☆ (4.0)</div>
+          <p>60 Seats | 3 Years | $850</p>
+        </div>
+      </div>
+      <div class="course-card wow animate__animated animate__fadeInUp">
+        <img src="recursos/curso4.jpg" alt="Food Science">
+        <div class="course-info">
+          <h3>Food Science</h3>
+          <p>10 Lessons</p>
+          <div class="rating">★★★★☆ (4.0)</div>
+          <p>60 Seats | 3 Years | $850</p>
+        </div>
+      </div>
+      <div class="course-card wow animate__animated animate__fadeInUp">
+        <img src="recursos/curso5.jpg" alt="Health Studies">
+        <div class="course-info">
+          <h3>Health Studies</h3>
+          <p>10 Lessons</p>
+          <div class="rating">★★★★☆ (4.0)</div>
+          <p>60 Seats | 3 Years | $850</p>
+        </div>
+      </div>
+      <div class="course-card wow animate__animated animate__fadeInUp">
+        <img src="recursos/curso6.jpg" alt="Architecture and Design">
+        <div class="course-info">
+          <h3>Architecture and Design</h3>
+          <p>10 Lessons</p>
+          <div class="rating">★★★★☆ (4.0)</div>
+          <p>60 Seats | 3 Years | $850</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- seccion parallax -->
+
+  <section class="offer-section">
+    <div class="offer-container">
+      <div class="offer-image"></div>
+      <div class="offer-content">
+        <h2>20% Offer Running - Join Today For Your Course</h2>
+        <p>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+          aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit quis nostrum exercitationem.
+        </p>
+        <a href="#" class="btn-register">Register Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- seccion video -->
+
+  <section class="video-section">
+    <div class="video-container">
+      <iframe width="600" height="340" src="https://www.youtube.com/embed/-rhPbSIVCBM?si=QVzr9K6brQsWWDnk"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+    </div>
+    <div class="text-container">
+      <h2>Meet Our Teachers</h2>
+      <div class="underline"></div>
+      <p>
+        It is a long established fact that a reader will be distracted by the readable content of a page when looking at
+        its layout.
+        The point of using Lorem Ipsum is that it has a more-or-less normal distribution.
+      </p>
+    </div>
+  </section>
+
+  <!-- testimonios -->
+  <section class="main-container" id="carousel">
+    <h1 class="section-title">Our Customer Testimonials</h1>
+
+    <div class="secondary-container" id="slide-container">
+      <article class="slide" data-slideIndex="0">
+        <div class="testimonial-content">
+          <img src="recursos/testimonial1.png" alt="Customer 1" class="customer-photo">
+          <h3 class="customer-name">Edna Linthicum</h3>
+          <p class="customer-rating">★★★★★</p>
+          <div class="testimonial-text">
+            <p>"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="slide" data-slideIndex="1">
+        <div class="testimonial-content">
+          <img src="recursos/testimonial2.png" alt="Customer 2" class="customer-photo">
+          <h3 class="customer-name">Edna F Herron</h3>
+          <p class="customer-rating">★★★★☆</p>
+          <div class="testimonial-text">
+            <p>"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="slide" data-slideIndex="2">
+        <div class="testimonial-content">
+          <img src="recursos/testimonial3.png" alt="Customer 3" class="customer-photo">
+          <h3 class="customer-name">Vera Henderson</h3>
+          <p class="customer-rating">★★★★☆</p>
+          <div class="testimonial-text">
+            <p>"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."</p>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    </div>
+    <div class="slide-indicators">
+      <a class="slide-indicator active"></a>
+      <a class="slide-indicator"></a>
+    
+    </div>
+
+    <div class="slide-buttons">
+      <a id="back-button" class="arrow back">
+        <i class="fa-solid fa-chevron-left"></i>
+      </a>
+      <a id="forward-button" class="arrow forward">
+        <i class="fa-solid fa-chevron-right"></i>
+      </a>
+    </div>
+  </section>
+
+  <script src="js/carrousel.js"></script>
+
+  <!-- seccion de galeria de fotos -->
+
+  <section id="gallery" class="gallery-info">
+    <h2 class="gallery-title">Our <span>Gallery</span></h2>
+    <p class="gallery-description">
+      It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+    </p>
+    <div class="gallery">
+      <a href="recursos/gallery1.jpg" data-fancybox="gallery" data-caption="Image 1">
+        <figure class="fotos">
+          <img src="recursos/gallery1.jpg" alt="Gallery Image 1" />
+          <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </figure>
+      </a>
+      <a href="recursos/gallery2.jpg" data-fancybox="gallery" data-caption="Image 2">
+        <figure class="fotos">
+          <img src="recursos/gallery2.jpg" alt="Gallery Image 2" />
+          <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </figure>
+      </a>
+      <a href="recursos/gallery3.jpg" data-fancybox="gallery" data-caption="Image 3">
+        <figure class="fotos">
+          <img src="recursos/gallery3.jpg" alt="Gallery Image 3" />
+          <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </figure>
+      </a>
+      <a href="recursos/gallery4.jpg" data-fancybox="gallery" data-caption="Image 4">
+        <figure class="fotos">
+          <img src="recursos/gallery4.jpg" alt="Gallery Image 4" />
+          <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </figure>
+      </a>
+      <a href="recursos/gallery5.jpg" data-fancybox="gallery" data-caption="Image 5">
+        <figure class="fotos">
+          <img src="recursos/gallery5.jpg" alt="Gallery Image 5" />
+          <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </figure>
+      </a>
+      <a href="recursos/gallery6.jpg" data-fancybox="gallery" data-caption="Image 6">
+        <figure class="fotos">
+          <img src="recursos/gallery6.jpg" alt="Gallery Image 6" />
+          <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </figure>
+      </a>
+      <a href="recursos/gallery7.jpg" data-fancybox="gallery" data-caption="Image 7">
+        <figure class="fotos">
+          <img src="recursos/gallery7.jpg" alt="Gallery Image 7" />
+          <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </figure>
+      </a>
+    </div>
+  </section>
+  
+
+
+
+  <!-- script responsiveslides -->
+  <script>
+    $(function () {
+      $(".rslides").responsiveSlides();
+    });
+  </script>
+
+  <!-- es para mostrar los controles -->
+
+  <script>
+    $(function () {
+      $(".rslides").responsiveSlides({
+        nav: true,
+        prevText: "❮",
+        nextText: "❯",
+        pauseControls: false,
+      });
+    });
+  </script>
+
+  <!-- script general -->
+  <script src="js/script.js"></script>
+
+  <!-- script contador -->
+
+  <script>
+    function animarContador(id, valorFinal) {
+      const elemento = document.getElementById(id);
+      let valorActual = 0;
+      const incremento = Math.ceil(valorFinal / 100);
+      const intervalo = setInterval(() => {
+        valorActual += incremento;
+        if (valorActual >= valorFinal) {
+          elemento.textContent = valorFinal + '+';
+          clearInterval(intervalo);
+        } else {
+          elemento.textContent = valorActual;
+        }
+      }, 30);
+    }
+
+    animarContador('estudiantes', 40000);
+    animarContador('cursos', 80);
+    animarContador('profesores', 60);
+  </script>
+
+  <!-- script wow -->
+
+  <script>new WOW().init();</script>
+  
+<!-- script para galeria -->
+
+<script>
+  Fancybox.bind("[data-fancybox]", {
+  });
+</script>
+
 </body>
+
 </html>
