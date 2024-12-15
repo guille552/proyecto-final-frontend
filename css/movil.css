@@ -1,11 +1,113 @@
 @media (max-width: 430px) {
+
+    body{
+        max-width: 430px;
+    }
     .top-bar {
+      flex-direction: column;
+      text-align: center;
+      padding: 10px 5px;
+    }
+  
+    .contact-info span {
+      margin-right: 0;
+      margin-bottom: 5px;
+    }
+  
+    .social-icons {
+      margin-top: 10px;
+    }
+  
+    .main-contact {
+      flex-direction: row;
+      text-align: center;
+      padding: 10px;
+    }
+  
+    .contact-details {
+        display: none;
+      margin-left: 0;
+    }
+  
+    .contact-item {
+      margin: 10px 0;
+    }
+  
+    .navbar-content {
+      flex-direction: column;
+      align-items: flex-start;
+      position: relative;
+    }
+  
+    .menu-toggle {
+      display: block;
+      flex-direction: row;
+      border: 1px blue;
+      color: var(--green);
+    }
+  
+    .navbar-nav {
+        display: none; /* Oculta el menú por defecto */
         flex-direction: column;
-        gap: 10px;
+        width: 100%;
+        background-color: var(--green);
+        position: absolute;
+        top: 100%; /* Menú debajo del navbar */
+        left: 0;
+        z-index: 1000;
+      }
+    
+      .navbar-nav.active {
+        display: flex; /* Muestra el menú cuando está activo */
+      }
+  
+    .navbar-nav ul {
+      flex-direction: column;
+      width: 100%;
+      padding: 0;
+    }
+  
+    .navbar-nav ul li {
+      text-align: center;
+      margin: 10px 0;
+    }
+  
+    .contact-button {
+      display: none; /* Oculta el botón de contacto en pantallas pequeñas */
     }
 
-    .main-header {
-        flex-direction: column;
-        align-items: center;
+    .rslides{
+        height: 600px;
     }
-}
+
+    .seccion-inscripcion {
+        max-width: 430px;
+    }
+
+    .sticky-button {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+      }
+
+    .video-section{
+        width: 430px;
+    }
+
+    .video-container{
+        max-width: 430px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr; /* Una sola columna */
+        grid-template-rows: auto; /* Altura automática según el contenido */
+        gap: 10px; /* Espaciado reducido entre imágenes */
+      }
+    
+      .gallery a:nth-child(7) {
+        grid-column: auto; /* Resetea el posicionamiento específico */
+        grid-row: auto;
+      }
+  }

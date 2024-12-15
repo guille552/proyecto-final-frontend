@@ -1,51 +1,60 @@
 @media (max-width: 768px) {
-    .navbar {
-      flex-wrap: wrap;
-      text-align: center;
-    }
-  
-    .navbar-content {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .logo img {
-      margin-bottom: 10px;
-    }
-  
-    .contact {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 10px;
-    }
-  
-    .contact-info {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .navbar-nav ul {
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-      margin: 10px 0;
-    }
-  
-    .navbar-nav ul li {
-      margin: 0;
-    }
-  
-    .navbar-nav ul li a {
-      font-size: 16px;
-    }
-  
-    .contact-button {
-      margin-top: 10px;
-      width: 100%;
-      max-width: 200px;
-    }
+
+
+  /* footer */
+
+  /* Media Query para pantallas de 768px o menos */
+  .footer-container {
+    flex-direction: column; /* Apila las secciones verticalmente */
+    text-align: center; /* Centra el texto */
   }
-  
+
+  .footer-section {
+    margin-bottom: 30px; /* Espaciado entre secciones */
+  }
+
+  .footer-section.about p,
+  .footer-section.links ul,
+  .footer-section.posts ul,
+  .footer-section.newsletter form {
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+  }
+
+  .footer-section.links ul {
+    padding-left: 0; /* Elimina el padding predeterminado */
+  }
+
+  .footer-section.posts li {
+    text-align: left; /* Alinea las publicaciones a la izquierda */
+    margin: 10px 0;
+  }
+
+  .footer-section form {
+    flex-direction: column; /* Coloca el input y botón verticalmente */
+  }
+
+  .footer-section input {
+    width: 100%; /* Input ocupa todo el ancho */
+    margin-bottom: 10px; /* Espacio entre input y botón */
+  }
+
+  .footer-section button {
+    width: 100%; /* Botón ocupa todo el ancho */
+  }
+
+  .social-icons a {
+    font-size: 18px; /* Ajusta tamaño de los íconos */
+    margin: 5px; /* Espacio entre íconos */
+  }
+}
+
+.offer-section {
+  padding: 0;
+  margin: auto;
+  height: 600px;
+}
+
+.offer-content{
+  width: 100%;
+  height: auto;
+}

@@ -21,7 +21,6 @@ body {
   font-family: raleway;
   /* max-width: 1200px; */
   margin: auto;
-  padding-bottom: 900px;
 }
 
 h1, h2{
@@ -182,11 +181,11 @@ h3{
 }
 
 .menu-toggle {
-  display: none;
+  display: none; /* Se oculta en pantallas grandes */
+  font-size: 24px;
   background: none;
   border: none;
   color: var(--white);
-  font-size: 24px;
   cursor: pointer;
 }
 
@@ -358,6 +357,7 @@ h3{
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   padding: 20px;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 
@@ -404,6 +404,7 @@ h3{
   display: flex;
   gap: 20px;
   margin-top: 20px;
+  flex-wrap: wrap;
 }
 
 .contador {
@@ -797,3 +798,241 @@ h3 {
   opacity: 1;
 }
 
+/* acordeon */
+
+.accordion-section h2 {
+  color: #333;
+}
+.accordion {
+  width: 80%;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.accordion-header {
+  background-color: #007f5f;
+  color: #fff;
+  padding: 15px;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.accordion-content {
+  display: none;
+  padding: 15px;
+  border-top: 1px solid #ddd;
+}
+.accordion-content img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 5px;
+}
+.accordion-content p {
+  margin: 10px 0 0;
+}
+.accordion-header i {
+  transition: transform 0.3s ease;
+}
+.accordion-header.active i {
+  transform: rotate(180deg);
+}
+.event-button {
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #007f5f;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+.event-button:hover {
+  background-color: #005f47;
+}
+
+/* footer */
+
+.footer {
+  background-color: #111;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+
+.footer-section h2, .footer-section h3 {
+  color: #00c853;
+  margin-bottom: 15px;
+}
+
+.footer-section p, .footer-section ul {
+  line-height: 1.6;
+  margin: 0;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+/* Latest Posts */
+.footer-section.posts li {
+  margin-bottom: 10px;
+}
+
+/* Newsletter */
+.footer-section form {
+  display: flex;
+  margin-top: 10px;
+}
+
+.footer-section input {
+  padding: 10px;
+  width: 70%;
+  border: none;
+}
+
+.footer-section button {
+  padding: 10px;
+  background-color: #00c853;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-section button:hover {
+  background-color: #009c3b;
+}
+
+/* Social Icons */
+.social-icons a {
+  color: #00c853;
+  font-size: 20px;
+  margin-right: 10px;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.social-icons a:hover {
+  color: #009c3b;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #444;
+  margin-top: 30px;
+  padding-top: 20px;
+}
+
+.footer-bottom span {
+  color: #00c853;
+}
+
+/* boton para ir arriba */
+
+.sticky-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  margin-bottom: 40px;
+}
+
+.sticky-button img {
+  width: 30px;
+  height: 30px;
+}
+
+.sticky-button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Modal: Fondo oscuro */
+.modal {
+  display: none; /* Inicialmente oculto */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro */
+  z-index: 1000; /* Asegura que esté por encima del contenido */
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center; /* Centrado horizontal */
+  align-items: center; /* Centrado vertical */
+}
+
+/* Contenido del modal */
+.modal-content {
+  position: relative; /* Necesario para posicionar el botón de cerrar */
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 80%;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Botón de cerrar dentro del modal */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  color: #333;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+/* Estilo del botón principal */
+#apply-now-btn {
+  padding: 10px 20px;
+  background-color: var(--green); /* Color de fondo, puedes cambiarlo */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+#apply-now-btn:hover {
+  background-color: #005500; /* Cambio de color al pasar el ratón */
+}

@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/tablet.css" />
+  <link rel="stylesheet" href="css/movil.css" />
   <link rel="stylesheet" href="css/animate.css" />
   <link rel="stylesheet" href="css/fancybox.css" />
   <link rel="stylesheet" href="css/carrousel.css" />
@@ -37,6 +38,9 @@
       <div class="logo">
         <img src="recursos/logo.png" alt="Logo">
       </div>
+      <button class="menu-toggle" id="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
       <div class="contact-details">
         <div class="contact-item">
           <i class="fas fa-phone-alt"></i>
@@ -65,10 +69,10 @@
       <nav class="navbar-nav">
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#services">About Us</a></li>
-          <li><a href="#carousel">Services</a></li>
-          <li><a href="#clients">Clients</a></li>
-          <li><a href="#notices">Blog</a></li>
+          <li><a href="#About">About Us</a></li>
+          <li><a href="#Pages">Pages</a></li>
+          <li><a href="#Courses">Courses</a></li>
+          <li><a href="#carousel">Blog</a></li>
           <li><a href="#contact-section">Contact</a></li>
         </ul>
       </nav>
@@ -148,7 +152,7 @@
     </div>
   </div>
 
-  <section class="seccion-inscripcion">
+  <section class="seccion-inscripcion" id="About">
     <div class="bloque-formulario">
       <h2>Inicia tu Inscripción</h2>
       <p>Es un hecho establecido que un lector se distraerá con el contenido legible de una página.</p>
@@ -183,7 +187,7 @@
 
   <!-- segmento cursos populares -->
 
-  <section class="courses-section">
+  <section class="courses-section" id="Courses">
     <h2>Explore Popular Courses</h2>
     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at
       its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.</p>
@@ -247,7 +251,7 @@
 
   <!-- seccion parallax -->
 
-  <section class="offer-section">
+  <section class="offer-section" id="Pages">
     <div class="offer-container">
       <div class="offer-image"></div>
       <div class="offer-content">
@@ -294,7 +298,9 @@
           <h3 class="customer-name">Edna Linthicum</h3>
           <p class="customer-rating">★★★★★</p>
           <div class="testimonial-text">
-            <p>"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."</p>
+            <p>"There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+              alteration in some form, by injected humour, or randomised words which don't look even slightly
+              believable."</p>
           </div>
         </div>
       </article>
@@ -305,7 +311,9 @@
           <h3 class="customer-name">Edna F Herron</h3>
           <p class="customer-rating">★★★★☆</p>
           <div class="testimonial-text">
-            <p>"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."</p>
+            <p>"There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+              alteration in some form, by injected humour, or randomised words which don't look even slightly
+              believable."</p>
           </div>
         </div>
       </article>
@@ -316,7 +324,9 @@
           <h3 class="customer-name">Vera Henderson</h3>
           <p class="customer-rating">★★★★☆</p>
           <div class="testimonial-text">
-            <p>"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."</p>
+            <p>"There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+              alteration in some form, by injected humour, or randomised words which don't look even slightly
+              believable."</p>
           </div>
         </div>
       </article>
@@ -327,7 +337,7 @@
     <div class="slide-indicators">
       <a class="slide-indicator active"></a>
       <a class="slide-indicator"></a>
-    
+
     </div>
 
     <div class="slide-buttons">
@@ -347,7 +357,8 @@
   <section id="gallery" class="gallery-info">
     <h2 class="gallery-title">Our <span>Gallery</span></h2>
     <p class="gallery-description">
-      It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+      It is a long established fact that a reader will be distracted by the readable content of a page when looking at
+      its layout.
     </p>
     <div class="gallery">
       <a href="recursos/gallery1.jpg" data-fancybox="gallery" data-caption="Image 1">
@@ -394,9 +405,130 @@
       </a>
     </div>
   </section>
-  
+
+  <!-- acordeon -->
+
+  <h2 class="accordion.section" style="text-align:center; margin-top:20px;">Our Upcoming Events</h2>
+  <div class="accordion">
+    <div class="accordion-header">
+      Foundation Program 2022 <i class="fa fa-chevron-down"></i>
+    </div>
+    <div class="accordion-content">
+      <img src="recursos/acordeon1.jpg" alt="Foundation Program">
+      <p><strong>Date:</strong> 30 August 2022 | <strong>Time:</strong> 10.00AM - 4.00PM</p>
+      <p>There are many variations of passages of orem psum available but the majority have suffered.</p>
+      <a href="#" class="event-button">Join Event</a>
+    </div>
+    <div class="accordion-header">
+      Student Award 2022 <i class="fa fa-chevron-down"></i>
+    </div>
+    <div class="accordion-content">
+      <img src="recursos/acordeon2.jpg" alt="Student Award">
+      <p><strong>Date:</strong> 30 August 2022 | <strong>Time:</strong> 10.00AM - 4.00PM</p>
+      <p>There are many variations of passages of orem psum available but the majority have suffered.</p>
+      <a href="#" class="event-button">Join Event</a>
+    </div>
+    <div class="accordion-header">
+      High School Program 2022 <i class="fa fa-chevron-down"></i>
+    </div>
+    <div class="accordion-content">
+      <img src="recursos/acordeon3.jpg" alt="High School Program">
+      <p><strong>Date:</strong> 30 August 2022 | <strong>Time:</strong> 10.00AM - 4.00PM</p>
+      <p>There are many variations of passages of orem psum available but the majority have suffered.</p>
+      <a href="#" class="event-button">Join Event</a>
+    </div>
+  </div>
+
+  <!-- footer -->
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section about">
+        <h2>EDULIFE</h2>
+        <p>
+          We are many variations of passages of lorem ipsum available but the majority have suffered alteration in some
+          form by injected humour or randomised words which don't look even slightly believable.
+        </p>
+        <p>📞 (+1) 123 456 7894</p>
+        <p>✉️ info@example.com</p>
+        <p>📍 3783 Armbrester Drive, USA</p>
+      </div>
+
+      <div class="footer-section links">
+        <h3>Important Links</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Upcoming Events</a></li>
+          <li><a href="#">Our Blogs</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section posts">
+        <h3>Latest Posts</h3>
+        <ul>
+          <li>
+            <strong>Nam libero tempore cum soluta nobis est</strong><br>
+            <small>August 30, 2022</small>
+          </li>
+          <li>
+            <strong>At vero et accusamus et iusto odio dignissimos</strong><br>
+            <small>August 30, 2022</small>
+          </li>
+          <li>
+            <strong>Sed perspiciatis unde omnis iste natus sit</strong><br>
+            <small>August 30, 2022</small>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-section newsletter">
+        <h3>Newsletter</h3>
+        <p>Subscribe to our newsletter, Get the latest updates and news from us!</p>
+        <form>
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit">➤</button>
+        </form>
+        <div class="social-icons">
+          <a href="#">🌐</a>
+          <a href="#">🐦</a>
+          <a href="#">💼</a>
+          <a href="#">▶️</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; Copyright 2024 <span>EDULIFE</span>. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- boton para ir arriba -->
+
+  <div class="sticky-button" id="toTopButton">
+    <i class="fa-solid fa-chevron-up"></i>
+  </div>
+
+  <!-- modal -->
+
+  <div id="promo-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="close-btn">&times;</span>
+      <h2>¡Bienvenido a nuestra escuela!</h2>
+      <p>Descubre cursos, actividades y mucho más. ¡Únete ahora y comienza tu aprendizaje!</p>
+      <button id="apply-now-btn">Aplicar Ahora</button>
+    </div>
+  </div>
 
 
+<!-- -------------------------------------------------------------------------- -->
+
+
+  <!-- script para el menu -->
 
   <!-- script responsiveslides -->
   <script>
@@ -447,13 +579,51 @@
   <!-- script wow -->
 
   <script>new WOW().init();</script>
-  
-<!-- script para galeria -->
 
-<script>
-  Fancybox.bind("[data-fancybox]", {
-  });
-</script>
+  <!-- script para galeria -->
+
+  <script>
+    Fancybox.bind("[data-fancybox]", {
+    });
+  </script>
+
+  <!-- script del acordeon -->
+
+  <script>
+
+    $(document).ready(function () {
+      $('.accordion-header').on('click', function () {
+        // Toggle active class for rotation
+        $(this).toggleClass('active');
+        // Toggle content visibility
+        $(this).next('.accordion-content').slideToggle();
+        // Close other open accordions
+        $('.accordion-content').not($(this).next()).slideUp();
+        $('.accordion-header').not(this).removeClass('active');
+      });
+    });
+
+  </script>
+
+  <!-- script para el boton sticky -->
+
+  <script>
+    $(document).ready(function () {
+      // Mostrar el botón solo cuando el usuario se desplaza hacia abajo
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 200) {
+          $('#toTopButton').fadeIn();
+        } else {
+          $('#toTopButton').fadeOut();
+        }
+      });
+
+      // Acción para desplazarse hacia arriba
+      $('#toTopButton').click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 800);
+      });
+    });
+  </script>
 
 </body>
 
